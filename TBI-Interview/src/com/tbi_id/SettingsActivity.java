@@ -8,6 +8,8 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -61,7 +63,14 @@ public class SettingsActivity extends Activity {
 		
 		
 		CheckBox checkBoxHipaa = (CheckBox) findViewById(R.id.hippaCompliance);
-	//	checkBoxHipaa.add
+		checkBoxHipaa.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+			
+			@Override
+			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+				
+				
+			}
+		});
 		
 		
 		
