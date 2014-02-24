@@ -52,7 +52,7 @@ public class SettingsActivity extends Activity {
 		
 		
 		CheckBox checkBoxHipaa = (CheckBox) findViewById(R.id.hippaCompliance);
-		checkBoxHipaa.add
+		//checkBoxHipaa.add
 		
 		
 		
