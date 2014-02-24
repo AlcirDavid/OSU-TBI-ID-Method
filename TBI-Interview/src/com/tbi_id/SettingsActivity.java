@@ -52,6 +52,7 @@ public class SettingsActivity extends Activity {
 			SharedPreferences.Editor editor = sharedPrefs.edit();
 			String email = sharedPrefs.getString("hipaaEmail", "ahmad.k.farag@gmail.com");
 			enterEmailHipaa.setText(email);
+			editor.apply();
 			
 
 		}
@@ -60,7 +61,7 @@ public class SettingsActivity extends Activity {
 		
 		
 		CheckBox checkBoxHipaa = (CheckBox) findViewById(R.id.hippaCompliance);
-		checkBoxHipaa.add
+	//	checkBoxHipaa.add
 		
 		
 		

@@ -54,7 +54,7 @@ public class StartInterview extends Activity {
 		
 		//Start Interview Button
 		ImageButton startInterviewButton = (ImageButton) findViewById(R.id.start_interview_button);
-		//when the button is pressed, save all inputted data into variables and place them into hashmap for later retrieval
+		//when the button is pressed, save all inputed data into variables and place them into hashmap for later retrieval
 		startInterviewButton.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				EditText interviewNameInput = (EditText) findViewById(R.id.interviewName);

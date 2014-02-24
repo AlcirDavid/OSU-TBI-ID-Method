@@ -35,7 +35,7 @@ public class Step1Cause extends Activity {
 		questionNum = (Integer) bundle.get("questionNum");
 		final HashMap<String, String> data = (HashMap<String, String>) bundle.getSerializable("patientData");
 		//get the input field where the patient will enter the case
-		EditText enterCause = (EditText) findViewById(R.id.enterCause);
+		final EditText enterCause = (EditText) findViewById(R.id.enterCause);
 		//button for adding an additional entry
 		Button addEntry = (Button) findViewById(R.id.addEntry);
 		//button for finishing adding causes
@@ -48,7 +48,7 @@ public class Step1Cause extends Activity {
 			public void onClick(View v) {
 				cause = enterCause.getText().toString();
 				// the key for the data will be "cause" along side what question it is
-				data.put("cause" + questionNum.toString(), cause);
+				data.put("cause" + questionNum, cause);
 				Intent i = new Intent(getApplicationContext(),com.tbi_id.Step1Activity.class);
 				Bundle b = new Bundle();
 				b.putSerializable("patientData", data);
