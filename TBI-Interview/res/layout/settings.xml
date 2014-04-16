@@ -20,7 +20,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#971425"
-            android:src="@drawable/help_button_50" />
+            android:src="@drawable/help" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -37,8 +37,8 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#971425"
-            android:src="@drawable/settings_button_50" />
+            android:background="#ef3d34"
+            android:src="@drawable/settingsactive" />
     </LinearLayout>
 
     <TextView
@@ -58,7 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/settingsTitle"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="50dp"
         android:text="@string/hipaaComplianceCheckbox" />
 
     <EditText
@@ -88,15 +88,33 @@
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:background="#971425"
-        android:weightSum="1" >
+        android:weightSum="2" >
 
+        <ImageButton
+            android:id="@+id/home_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#971425"
+            android:src="@drawable/home" />
+        
         <ImageButton
             android:id="@+id/about_button"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#971425"
-            android:src="@drawable/about_button_75" />
+            android:src="@drawable/about" />
     </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/save_settings"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/emailEnterHipaa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:background="#971425"
+        android:src="@drawable/save_button_50" />
 
 </RelativeLayout>

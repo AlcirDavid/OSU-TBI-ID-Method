@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity" >
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#971425"
+        android:orientation="horizontal"
+        android:weightSum="4" >
+
+        <ImageButton
+            android:id="@+id/help_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#971425"
+            android:src="@drawable/help" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/osu_tbi_id"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/settings_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#971425"
+            android:src="@drawable/settings" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#971425"
+        android:weightSum="2" >
+
+        <ImageButton
+            android:id="@+id/home_button_main_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#971425"
+            android:src="@drawable/home" />
+        
+        <ImageButton
+            android:id="@+id/about_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ef3d34"
+            android:src="@drawable/aboutactive" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/header" >
+        
+        <LinearLayout
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >        
+
+		<TextView
+                android:id="@+id/about_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="@string/about_title"
+                android:textSize="32sp" />  
+                
+		<RelativeLayout
+		    android:layout_marginTop="10dp"
+		    android:layout_gravity="center"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" >
+                
+		<ImageView
+		    android:id="@+id/john_corrigan_picture"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginRight="5dp"
+		    android:src="@drawable/john_corrigan" />
+		
+		<ImageView
+		    android:id="@+id/jen_bogner_picture"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="5dp"
+		    android:layout_toRightOf="@+id/john_corrigan_picture"
+		    android:src="@drawable/jen_bogner" />
+		
+		</RelativeLayout>
+            	            
+		    <TextView
+		        android:id="@+id/osutbi_dev_excerpt"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:layout_marginTop="25dp"
+		        android:gravity="center"
+		        android:text="@string/osutbi_dev_excerpt" />
+		    
+		    <TextView
+		        android:id="@+id/osutbi_training_txt"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:autoLink="web"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:gravity="center"
+		        android:text="@string/osutbi_training_txt" />	
+		        
+		    <TextView
+		        android:id="@+id/osutbi_more_info"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:layout_marginTop="25dp"
+		        android:gravity="center"
+		        android:text="@string/osutbi_more_info" />
+		    
+		    <TextView
+		        android:id="@+id/osutbi_hard_copy_link"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:autoLink="web"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:gravity="center"
+		        android:text="@string/osutbi_training_txt" />			    		    	    
+	    
+			<TextView
+		    	android:id="@+id/osutbi_property_disclaim"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:layout_marginTop="25dp"
+		        android:gravity="center"
+		        android:text="@string/osutbi_property_disclaim" />    
+	        
+			<TextView
+		    	android:id="@+id/osutbi_permissions"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:layout_marginTop="25dp"
+		        android:gravity="center"
+		        android:text="@string/osutbi_permissions" /> 
+	        
+			<TextView
+		    	android:id="@+id/osutbi_grant_funding"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:layout_marginTop="25dp"
+		        android:gravity="center"
+		        android:text="@string/osutbi_grant_funding" /> 
+		        
+			</LinearLayout>
+	        
+		</ScrollView>
+
+</RelativeLayout>

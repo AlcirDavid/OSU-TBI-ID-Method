@@ -1,5 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".StartInterview" >
@@ -10,7 +11,7 @@
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:background="#971425"
-        android:weightSum="3" >
+        android:weightSum="2" >
 
         <ImageButton
             android:id="@+id/home_button_main_screen"
@@ -18,15 +19,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#971425"
-            android:src="@drawable/home_button_75" />
-
-        <ImageButton
-            android:id="@+id/patient_button"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="#ef3d34"
-            android:src="@drawable/patient_button_active75" />
+            android:src="@drawable/home" />
         
         <ImageButton
             android:id="@+id/about_button"
@@ -34,7 +27,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#971425"
-            android:src="@drawable/about_button_75" />
+            android:src="@drawable/about" />
     </LinearLayout>
 
     <EditText
@@ -83,7 +76,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#971425"
-            android:src="@drawable/help_button_50" />
+            android:src="@drawable/help" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -101,7 +94,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#971425"
-            android:src="@drawable/settings_button_50" />
+            android:src="@drawable/settings" />
     </LinearLayout>
 
     <EditText
@@ -132,11 +125,11 @@
 
     <ImageButton
         android:id="@+id/start_interview_button"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_below="@+id/date"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp"
-        android:src="@drawable/next_button_75" />
+        android:layout_marginTop="18dp"
+        android:src="@drawable/next_50" />
 
 </RelativeLayout>
